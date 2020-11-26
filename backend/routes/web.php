@@ -20,3 +20,7 @@ Route::get("/", function () {
 Route::get("/tasks", function () {
     return view("tasks.index");
 });
+
+Route::get("/tasks/create", function () {
+    return view("tasks.create");
+});
