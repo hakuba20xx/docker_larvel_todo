@@ -24,3 +24,11 @@ Route::get("/tasks", function () {
 Route::get("/tasks/create", function () {
     return view("tasks.create");
 });
+
+Route::get("/tasks/{id}/edit", function () {
+    return view("tasks.edit");
+});
+
+Route::get("/tasks/{id}", function () {
+    return view("tasks.show");
+});
